@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Islamic Cyber Shield – Free Ethical Hacking Course</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Roboto',sans-serif; background:#0d1117; color:#e0e0e0; transition: background 0.3s,color 0.3s;}
+h1,h2,h3,h4{font-family:'Orbitron',sans-serif;}
+a{text-decoration:none;}
+
+/* Background animation layer */
+.bg-lines{
+  position:fixed;
+  top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;overflow:hidden;
+}
+.bg-lines span{
+  position:absolute;
+  width:2px;height:100%;
+  background:rgba(0,255,150,0.1);
+  animation:fall 2s linear infinite;
+}
+@keyframes fall{
+  0%{top:-100%;}
+  100%{top:100%;}
+}
+
+/* Container & Sections */
+.container{max-width:900px;margin:50px auto;padding:30px;position:relative;z-index:1;}
+.logo{display:flex;align-items:center;gap:15px;margin-bottom:30px;justify-content:center;}
+.logo img{height:50px;}
+.logo h1{font-size:2rem;color:#00ff99;}
+.section{background:rgba(255,255,255,0.05);padding:25px;border-radius:12px;margin-bottom:20px;position:relative;transition:0.3s;}
+.section:hover{transform:scale(1.02);box-shadow:0 10px 25px rgba(0,255,150,0.2);}
+ul{margin-left:20px;}
+li{margin-bottom:8px;line-height:1.5;}
+
+/* Inbox Buttons */
+.inbox-buttons{display:flex;justify-content:center;flex-wrap:wrap;gap:15px;margin-top:25px;}
+.inbox-buttons a{padding:12px 25px;border-radius:50px;font-weight:bold;color:#fff;transition:0.3s;display:inline-block;text-align:center;}
+.inbox-buttons a:hover{transform:scale(1.1);opacity:0.9;}
+.whatsapp{background:#25D366;}
+.messenger{background:#0084FF;}
+.telegram{background:#0088cc;}
+
+/* Toggle Dark/Light */
+.toggle-container{position:fixed;top:20px;right:20px;z-index:2;}
+.toggle-btn{padding:10px 20px;background:#00ff99;color:#000;font-weight:bold;border:none;border-radius:25px;cursor:pointer;transition:0.3s;}
+.toggle-btn:hover{opacity:0.9;}
+body.light{background:#f5f5f5;color:#222;}
+body.light .section{background:rgba(0,0,0,0.05);}
+body.light .toggle-btn{color:#00ff99;background:#222;}
+</style>
+</head>
+<body>
+
+<!-- Background Lines -->
+<div class="bg-lines"></div>
+<script>
+const bg = document.querySelector('.bg-lines');
+for(let i=0;i<50;i++){
+  let span = document.createElement('span');
+  span.style.left = Math.random()*100 + '%';
+  span.style.animationDuration = (1.5+Math.random()*2)+'s';
+  span.style.opacity = Math.random()*0.5+0.1;
+  bg.appendChild(span);
+}
+</script>
+
+<!-- Dark/Light Toggle -->
+<div class="toggle-container">
+  <button class="toggle-btn" onclick="document.body.classList.toggle('light')">Toggle Dark/Light</button>
+</div>
+
+<div class="container">
+  <!-- Logo + Heading -->
+  <div class="logo">
+    <img src="icslogo.png" alt="Logo">
+    <h1>Islamic Cyber Shield</h1>
+  </div>
+
+  <!-- Hero Section -->
+  <div class="section">
+    <h2> Free Ethical Hacking 
+     & 
+    Spamming Training</h2>
+    <p style="color:#00ff99;">নৈতিক ও আইনসম্মত সাইবার নিরাপত্তা শেখার জন্য প্রফেশনাল কোর্স</p>
+  </div>
+
+  <!-- Course Overview -->
+  <div class="section">
+    <h2>🔹 Course Overview</h2>
+    <p>ইসলামী নৈতিকতার মধ্যে থেকে সাইবার নিরাপত্তা শিখতে আগ্রহী ছাত্র ও ছাত্রীদের জন্য প্রফেশনাল অনলাইন ট্রেনিং।</p>
+  </div>
+
+  <!-- Learning Points -->
+  <div class="section">
+    <h2>🔹 শেখার বিষয়বস্তু</h2>
+    <ul>
+      <li>অনলাইন সিকিউরিটি বেসিক</li>
+      <li>ওয়েব/অ্যাকাউন্ট সুরক্ষা ও প্র্যাকটিক্যাল টিপস</li>
+      <li>ফিশিং ও সামাজিক প্রকৌশল আক্রমণ চিনতে ও প্রতিরোধ করা</li>
+      <li>প্রতিরক্ষামূলক (Defensive) Ethical Hacking টেকনিক</li>
+    </ul>
+  </div>
+
+  <!-- Who Can Join -->
+  <div class="section">
+    <h2>🔹 কাদের জন্য</h2>
+    <p>ইসলামী নৈতিকতা মেনে শিখতে আগ্রহী ছেলে ও মেয়ে উভয়ের জন্য খোলা।</p>
+  </div>
+
+  <!-- Important Note -->
+  <div class="section">
+    <h2>🔹 গুরুত্বপূর্ণ নোট</h2>
+    <p>এই প্রশিক্ষণ শুধুমাত্র রক্ষামূলক ও আইনসম্মত উদ্দেশ্যে। বেআইনী কাজে ব্যবহার সম্পূর্ণ নিষিদ্ধ।</p>
+  </div>
+
+  <!-- Inbox Buttons -->
+  <div style="text-align:center; margin-top:20px;">
+    <p>📩 সীমিত সিট – আগ্রহীরা এখনই ইনবক্স করুন: <strong>inbox me </strong></p>
+    <div class="inbox-buttons">
+      <a href="https://wa.me/88016183737, আমি Ethical Hacking ট্রেনিংতে আগ্রহী।" target="_blank" class="whatsapp">WhatsApp</a>
+      <a href="https://m.me/zeromesnsk" target="_blank" class="messenger">Messenger</a>
+      <a href="https://t.me/zerome_snsk" target="_blank" class="telegram">Telegram</a>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
